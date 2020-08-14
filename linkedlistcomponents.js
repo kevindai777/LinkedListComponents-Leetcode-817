@@ -36,7 +36,9 @@ head.next.next.next.next = new Node(5)
 let G = [1,2,3]
 
 
-//O(n) solution
+//O(n) solution where n is the length of the linked list
+//We use a set to hold the values of G, then iterate over the linked list
+//to see if the set holds a consecutive node in the list/if the next value in the list is empty
 
 let result = 0
 let set = new Set(G)
